@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+*.log
+client_secret*.json
+token*.json
+.env
