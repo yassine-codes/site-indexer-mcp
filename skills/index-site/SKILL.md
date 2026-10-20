@@ -11,7 +11,7 @@ Drive the full Search Console onboarding loop for **$ARGUMENTS** with the
 the site's source; you are the one who places the verification token and deploys.
 
 If the site-indexer tools are missing, stop and tell the user to install it:
-`claude mcp add site-indexer -e GOOGLE_OAUTH_CLIENT_FILE=/path/to/client.json -- npx -y github:yassine-codes/site-indexer`
+`claude mcp add site-indexer -e GOOGLE_OAUTH_CLIENT_FILE=/path/to/client.json -- npx -y github:yassine-codes/site-indexer-mcp`
 
 ## Loop
 

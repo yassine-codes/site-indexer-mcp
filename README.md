@@ -93,10 +93,10 @@ Requires Node ≥ 20.
 # From GitHub (private repo: needs your normal git credentials). Builds on install.
 claude mcp add site-indexer --scope user \
   -e GOOGLE_OAUTH_CLIENT_FILE=$HOME/.config/site-indexer/client_secret.json \
-  -- npx -y github:yassine-codes/site-indexer
+  -- npx -y github:yassine-codes/site-indexer-mcp
 
 # Or from a local clone
-git clone git@github.com:yassine-codes/site-indexer.git && cd site-indexer && npm ci && npm run build
+git clone git@github.com:yassine-codes/site-indexer-mcp.git && cd site-indexer-mcp && npm ci && npm run build
 claude mcp add site-indexer --scope user \
   -e GOOGLE_OAUTH_CLIENT_FILE=$HOME/.config/site-indexer/client_secret.json \
   -- node "$PWD/dist/cli.js"

@@ -23,7 +23,14 @@
   "engines": {
     "node": ">=20"
   },
-  "keywords": ["mcp", "google-search-console", "site-verification", "sitemap", "indexnow", "seo"],
+  "keywords": [
+    "mcp",
+    "google-search-console",
+    "site-verification",
+    "sitemap",
+    "indexnow",
+    "seo"
+  ],
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.1",
@@ -33,5 +40,9 @@
     "@types/node": "^22.0.0",
     "typescript": "^5.9.3",
     "vitest": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yassine-codes/site-indexer-mcp.git"
   }
 }
