@@ -196,20 +196,17 @@ The tests never touch the network: `mockFetch` fails on any unmocked request.
 
 ### Owner-run live verification (needs your real credentials)
 
-These have **not** been run by the author (no Google credentials in the build environment):
-
 ```bash
 export GOOGLE_OAUTH_CLIENT_FILE=~/.config/site-indexer/client_secret.json
 node dist/cli.js auth login
 node dist/cli.js auth status                                     # ready: true
-node scripts/smoke.mjs https://raqn-i9qr.netlify.app/            # still dry-run: shows the plan
-# real run, read-mostly on an already-verified site (raqn: no writes expected except sitemap if missing):
-# then, in Claude Code (interactive), from the raqn repo:
-#   /index-site https://raqn-i9qr.netlify.app/
+node scripts/smoke.mjs https://uktob.app/                        # still dry-run: shows the plan
+# real run, in Claude Code (interactive), from the site's repo:
+#   /index-site https://uktob.app/
 ```
 
-Validation runs: [docs/validation/raqn.md](docs/validation/raqn.md) (Netlify static site, what each step
-should return) and [docs/validation/code2025.md](docs/validation/code2025.md) (self-hosted Node app, local
+Validation runs: [docs/validation/uktob.md](docs/validation/uktob.md) (Netlify static site on a custom
+domain; first live run, 2026-10-20, all steps passed) and [docs/validation/code2025.md](docs/validation/code2025.md) (self-hosted Node app, local
 integration run).
 
 ## License
